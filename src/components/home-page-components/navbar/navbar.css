@@ -1,0 +1,129 @@
+.navbar{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0rem 2rem;
+    color: white;
+    margin-bottom: 5rem;
+    
+}
+
+.navbar-logo{ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-logo h1{ 
+    font-size: 30px;
+}
+
+.navbar-links{ 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-links li { 
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar-links a{ 
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links a:hover { 
+    color: grey;
+}
+
+.navbar-login{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-login a{ 
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.8s ease;
+}
+
+.navbar-login a:hover{ 
+    border-bottom: 1px solid gold;
+}
+
+.navbar-login div{ 
+    height: 30px;
+    width: 1px;
+    background-color: grey;
+}
+
+.open-button{ 
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-small-screen-menu{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.navbar-small-screen-menu-links{ 
+    list-style: none;
+}
+
+.navbar-small-screen-menu-links li{ 
+    margin-bottom: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-small-screen-menu-links li a:hover{ 
+    color: white;
+}
+
+.navbar-small-screen-menu-links li a{ 
+    text-decoration: none;
+    color: gold;
+    font-family: 'italianno';
+    font-size: 30px;
+}
+
+
+.navbar-small-screen-menu .close-button{ 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px){
+    .navbar-links{ 
+        display: none;
+    }
+    .open-button{ 
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px){ 
+    .navbar-login{ 
+        display: none;
+    }
+}

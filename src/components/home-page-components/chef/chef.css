@@ -1,0 +1,54 @@
+.chef{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.chef-image{ 
+    width: 100%;
+    flex: 1;
+}
+
+.chef-image img{ 
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.chef-text{ 
+    width: 100%;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.chef-text h2{ 
+    font-family: 'italianno';
+    font-size: 55px;
+    color: rgb(172, 150, 28);
+}
+
+.chef-text h4{ 
+    color: white;
+    line-height: 2rem;
+    word-spacing: 2px;
+    font-style: italic;
+}
+
+.chef-text p{ 
+    color: white;
+}
+
+@media screen and (max-width:1000px){ 
+    .chef{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .chef-image img{ 
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 0;
+    }
+}

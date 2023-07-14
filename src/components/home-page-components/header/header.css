@@ -1,0 +1,47 @@
+.header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+.header-text{ 
+    flex: 1;
+    color: white;
+}
+
+.header-text h1{ 
+    text-transform: uppercase;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-text p{ 
+    text-transform: capitalize;
+}
+
+.header-text h4{ 
+    line-height: 28px;
+}
+
+.header-text button{ 
+    padding: 0.3rem 1.2rem;
+    color: white;
+    border: none;
+    background-color: rgb(172, 150, 28);
+    font-family: 'italianno';
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-image{ 
+    flex: 1;
+}
+
+
+@media screen and (max-width:1050px){ 
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

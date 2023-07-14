@@ -1,0 +1,37 @@
+.menu{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.menu-menu-container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-menu-container-wine{ 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-menu-container-image img{  
+    width: 250px;
+    margin: 0 2rem;
+}
+
+@media screen and (max-width:777px){ 
+    .menu-menu-container{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-menu-container-wine{ 
+        width: 100%;
+    }
+}
