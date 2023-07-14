@@ -4,6 +4,16 @@ import Food from '../../../assets/foog.jpg'
 import { motion } from 'framer-motion'
 
 const Header = () => {
+
+    const bounceAnimation = {
+        y: [-10, 10], // Define the vertical position values for the bouncing animation
+        transition: {
+          duration: 2,
+          repeat: Infinity, // Set the animation to repeat indefinitely
+          repeatType: 'reverse', // Reverse the animation on each repeat
+        },
+      };
+
   return (
     <motion.div  
     animate={{y:5, opacity:1}}
@@ -27,7 +37,7 @@ const Header = () => {
         </div>
 
         <div className='header-image'> 
-            <img src={Food} />
+            <motion.img initial={{ y: 0 }} animate={bounceAnimation}src={Food} />
         </div>
     </motion.div>
   )

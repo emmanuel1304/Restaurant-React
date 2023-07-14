@@ -11,10 +11,10 @@ const Chef = () => {
   return (
     <motion.div  
     initial={{opacity:0, scale:0}}
-    whileInView={{opacity:1, scale:1, transition:{duration:0.5}}}
+    whileInView={{opacity:1, scale:1, transition:{duration:1.5}}}
     className='chef'> 
         <div className='chef-image'> 
-            <img src={chef2} />
+            <motion.img initial={{scale:1}} whileHover={{scale:0.99}} src={chef2} />
         </div>
 
         <div className='chef-text'> 
